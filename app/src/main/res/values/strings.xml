@@ -1,38 +1,38 @@
 <resources>
     <string name="app_name">Jogo do labirinto</string>
+
+    <!-- Menu -->
+    <string name="btn_start">Clique para começar!</string>
 	
 	 <!-- Game status -->
-    <string name="ball">Ball in maze</string>
+    <string name="ball">Lost in Jungle</string>
     <string name="not_played">Not played</string>
     <string name="in_progress">In progress</string>
     <string name="done">Done</string>
-    <string name="new_highscore">You set new highest score!</string>
-	
-	<!-- MainActivity -->
+    <string name="new_highscore">Nova pontuação máxima conseguida!!!</string>
+    <string name="game_status_intro">Estado do jogo:\ </string>
+
+
+    <!-- MainActivity -->
     <string name="not_available_intro">Não é possivel jogar pela indisponibildiade do seguinte sensor: </string>
-    <string name="game_status_intro">Game status:\ </string>
-    <string name="highest_score_intro">Highest score:\ </string>
+    <!--<string name="game_status_intro">Game status:\ </string>-->
+    <string name="highest_score_intro">Melhor tempo:\ </string>
     <string name="points">%.0f points</string>
     <string name="seconds">%.1f s</string>
-    <string name="sensors">Sensors</string>
+    <!--<string name="sensors">Sendores</string>-->
 
     <!-- sensors -->
     <string name="accelerometer">Accelerometer</string>
 
-
     <!-- Exit dialog -->
-    <string name="game_exit_title">Do you really want to exit game?</string>
-    <string name="game_exit_message">Game progress won\'t be saved</string>
+    <string name="game_exit_title">Pretende mesmo sair do jogo?</string>
+    <string name="game_exit_message">O seu progresso não será gravado!!!</string>
 	
 	  <!-- Game over dialog -->
-    <string name="game_over_title">Game over</string>
-    <string name="game_over_marmot">Your score is: %d \nIf you want to play again, just tap the
-        button bellow and start moving</string>
-    <string name="game_over_treasure">Gold, gold and lot more gold!! \nDo you want to find another
-        chest? You just need to get on open space again..</string>
-    <string name="game_over_ball">Great job! Your time was: %.1f s \nIf you want to play again,
+    <string name="game_over_title">Ganhou!!!!!</string>
+    <string name="game_over_ball">Bom trabalho! O seu tempo foi de: %.1f s \nSe pretende jogar de novo,
         just tap the buttton bellow</string>
-    <string name="play_again_button">Play again</string>
-    <string name="go_back_button">Go back</string>
+    <string name="play_again_button">Jogar de novo</string>
+    <string name="go_back_button">Voltar</string>
 	
 </resources>

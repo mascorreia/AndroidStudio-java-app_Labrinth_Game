@@ -16,9 +16,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.example.labrinth_game.GameBallActivity;
-
-
 public class MainActivity extends AppCompatActivity {
 
     private ListView gamesListView;
@@ -30,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         gamesListView = findViewById(R.id.gamesList);
-        TextView notAvailableView = findViewById(R.id.notAvailable);
+       TextView notAvailableView = findViewById(R.id.notAvailable);
 
         gamesList = GameManager.getGamesList(this);
 
@@ -58,14 +55,6 @@ public class MainActivity extends AppCompatActivity {
                         intent = new Intent(MainActivity.this,
                                 GameBallActivity.class);
                         break;
-                   /* case R.string.treasure:
-                        intent = new Intent(MainActivity.this,
-                                GameTreasureActivity.class);
-                        break;
-                    case R.string.marmot:
-                        intent = new Intent(MainActivity.this,
-                                GameMarmotActivity.class);
-                        break;*/
                     default:
                         return;
                 }
@@ -97,15 +86,9 @@ public class MainActivity extends AppCompatActivity {
         SensorManager mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         if (mSensorManager != null) {
             for (int sensor: sensorsNeeded) {
-                /*if (sensor == R.string.gps) {
-                    if (getSystemService(LOCATION_SERVICE) == null) {
-                        unavailableSensors.add(sensor);
-                    }
-                } else {*/
                     if (mSensorManager.getDefaultSensor(GameManager.getSensorConstant(sensor)) == null) {
                         unavailableSensors.add(sensor);
                     }
-                ///}
             }
         }
         return unavailableSensors;
